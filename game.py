@@ -31,7 +31,8 @@ while True:
     x=choice.lower()
     if x == "y":
         Game()
-    if x== "n":
+        
+    elif x== "n":
         print("Exiting game...")
         time.sleep(2)
         print("exited. GOODBYE")

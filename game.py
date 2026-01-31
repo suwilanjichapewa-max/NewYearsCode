@@ -6,7 +6,7 @@ def Game():
     num= random.randint(1,100)
     #print(num)
     
-    for i in range(1,6):
+    for i in range(1,5):
         a = i
         guess= int(input(f"Enter guess #{a}: "))
 
@@ -17,11 +17,17 @@ def Game():
         else:
             print("You have guessed correctly")
             break
+    guess2= int(input("Enter guess #5: "))
+
+    if guess2 == num:
+        print("You're in luck. Have guessed it correctly on your last try!")
+    else:
+        print(f"You're all out of guesses! The number was{num}")
 
 Game()
 
 while True:
-    choice=input("You're all out of guesses! Would you like to try again?(y/n): ")
+    choice=input("Would you like to try again?(y/n): ")
     x=choice.lower()
     if x == "y":
         Game()

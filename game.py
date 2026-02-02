@@ -22,7 +22,7 @@ def Game():
     if guess2 == num:
         print("You're in luck. Have guessed it correctly on your last try!")
     else:
-        print(f"You're all out of guesses! The number was {num}")
+        print(f"You're all out of guesses!!! The number was {num}")
 
 Game()
 
